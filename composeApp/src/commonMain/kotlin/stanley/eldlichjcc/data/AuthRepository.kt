@@ -1,4 +1,4 @@
-package stanley.eldlichjcc.repo
+package stanley.eldlichjcc.data
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.*
@@ -28,7 +28,7 @@ class AuthRepositoryImpl : AuthRepository {
 
     override suspend fun login(username: String, password: String): LoginResponse {
         return try {
-            client.post("http://localhost:8080/login") {
+            client.post(UserData.url+"/login") {
                 contentType(ContentType.Application.Json)
                 setBody(LoginRequest(username, password))
             }.body<LoginResponse>()

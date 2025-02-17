@@ -107,7 +107,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "stanley.eldlichjcc"
+            packageName = "Eldlich Mun Platform"
             packageVersion = "1.0.0"
         }
     }

@@ -19,5 +19,7 @@ dependencies {
     implementation(libs.ktor.server.netty)
     implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.ktor.server.content.negotiation)
+    implementation(libs.sqlite.jdbc)
     testImplementation(libs.kotlin.test.junit)
 }
+
