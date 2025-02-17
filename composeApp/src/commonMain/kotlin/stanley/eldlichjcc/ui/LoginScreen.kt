@@ -99,6 +99,7 @@ fun LoginScreen(
                     if (result.success) {
                         UserData.username = username
                         UserData.role = result.role.toString()
+                        UserData.seat = result.seat.toString()
                         onLoginSuccess()
                     } else {
                         errorMessage = result.error ?: "登陆失败"
