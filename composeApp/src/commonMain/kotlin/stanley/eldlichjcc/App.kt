@@ -37,7 +37,7 @@ fun LoginScreen(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Welcome to KMP App",
+            text = "登录",
             style = MaterialTheme.typography.h4,
             modifier = Modifier.padding(bottom = 32.dp)
         )
@@ -53,7 +53,7 @@ fun LoginScreen(
         OutlinedTextField(
             value = username,
             onValueChange = { username = it },
-            label = { Text("Username") },
+            label = { Text("用户名") },
             modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp),
             singleLine = true
         )
@@ -61,7 +61,7 @@ fun LoginScreen(
         OutlinedTextField(
             value = password,
             onValueChange = { password = it },
-            label = { Text("Password") },
+            label = { Text("密码") },
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp),
             singleLine = true
